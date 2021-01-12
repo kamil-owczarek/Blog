@@ -24,13 +24,3 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
-
-
-### URLs
-Connect to this URLs to use functions:
-* Home page: `https://<server_ip>/`
-* List of pizza: `https://<server_ip>/pizza/list`
-* Add pizza: `https://<server_ip>/pizza/add`
-* Show detail about pizza: `https://<server_ip>/pizza/<pizza_id>`
-* Vote for pizza: `https://<server_ip>/pizza/vote`
-* Add topping: `https://<server_ip>/topping/add`
