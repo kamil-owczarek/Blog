@@ -5,6 +5,7 @@ export default class AddPost extends Component {
     constructor(props) {
         super(props);
         this.onChangeTitle = this.onChangeTitle.bind(this);
+        this.onChangeAuthor = this.onChangeAuthor.bind(this);
         this.onChangeDescription = this.onChangeDescription.bind(this);
         this.savePost = this.savePost.bind(this);
         this.newPost = this.newPost.bind(this);
@@ -26,6 +27,12 @@ export default class AddPost extends Component {
         });
     }
 
+    onChangeAuthor(e) {
+        this.setState({
+            author: e.target.value
+        });
+    }
+
     onChangeDescription(e) {
         this.setState({
             description: e.target.value
@@ -35,6 +42,7 @@ export default class AddPost extends Component {
     savePost() {
         var data = {
             title: this.state.title,
+            author: this.state.author,
             description: this.state.description
         };
 
@@ -75,7 +83,7 @@ export default class AddPost extends Component {
                     <div>
                         <h4>You submitted successfully!</h4>
                         <button className="btn btn-success" onClick={this.newPost}>
-                            Add
+                            Add another post
                         </button>
                     </div>
                 ) : (
@@ -100,6 +108,7 @@ export default class AddPost extends Component {
                                 id="author"
                                 required
                                 value={this.state.author}
+                                onChange={this.onChangeAuthor}
                                 name="author" />
                         </div>
 

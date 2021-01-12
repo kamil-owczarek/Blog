@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link, Route, Switch } from "react-router-dom";
+import PostsList from "../src/components/posts-list.component";
+import AddPost from "../src/components/add-post.component";
+import Post from "../src/components/post.component";
 
 class App extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
-          <a href="/posts" className="navbar-brand">
+          <a href="/" className="navbar-brand">
             Blog
           </a>
           <div className="navbar-nav mr-auto">
@@ -22,7 +25,7 @@ class App extends Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={"/"} className="nav-link">
+              <Link to={"/contact"} className="nav-link">
                 Contact
               </Link>
             </li>
@@ -31,9 +34,9 @@ class App extends Component {
 
         <div className="container mt-3">
           <Switch>
-            <Route exact path={["/", "posts"]} component={PostsList} />
+            <Route exact path="/posts" component={PostsList} />
             <Route exact path="/add" component={AddPost} />
-            <Route exact path="/post/:id" component={Post} />
+            <Route exact path="/posts/:id" component={Post} />
           </Switch>
         </div>
       </div>

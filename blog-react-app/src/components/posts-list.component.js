@@ -111,9 +111,9 @@ export default class PostsList extends Component {
 
                     <ul className="list-group">
                         {posts && posts.map((post, index) => (
-                            <li className={"list-group-item" + (index === currentIndex ? "active" : "")} 
+                            <li className={"list-group-item " + (index === currentIndex ? "active" : "")} 
                                 onClick={() => this.setActivePost(post, index)}
-                                key={index}>
+                                key={index} >
                                 {post.title}
                             </li>
                         ))}
