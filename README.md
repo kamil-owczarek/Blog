@@ -11,6 +11,9 @@ Project is created with:
 * Python version: 3.9.1
 * Django version: 3.0.5
 * Django Rest Framework version: 3.12.2
+* React version: 17.0.1np
+* axios version: 0.21.1
+* bootstrap version: 4.5.3
 
 ## Setup
 ### Requirements
