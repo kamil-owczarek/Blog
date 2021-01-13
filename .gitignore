@@ -157,25 +157,25 @@ dmypy.json
 
 # React app
 # dependencies
-blog-react-app/node_modules
-blog-react-app/.pnp
-blog-react-app/.pnp.js
+frontend/blog-react-app/node_modules
+frontend/blog-react-app/.pnp
+frontend/blog-react-app/.pnp.js
 
 # testing
-blog-react-app/coverage
+frontend/blog-react-app/coverage
 
 # production
-blog-react-app/build
+frontend/blog-react-app/build
 
 # misc
-blog-react-app/.DS_Store
-blog-react-app/.env.local
-blog-react-app/.env.development.local
-blog-react-app/.env.test.local
-blog-react-app/.env.production.local
+frontend/blog-react-app/.DS_Store
+frontend/blog-react-app/.env.local
+frontend/blog-react-app/.env.development.local
+frontend/blog-react-app/.env.test.local
+frontend/blog-react-app/.env.production.local
 
-blog-react-app/npm-debug.log*
-blog-react-app/yarn-debug.log*
-blog-react-app/yarn-error.log*
+frontend/blog-react-app/npm-debug.log*
+frontend/blog-react-app/yarn-debug.log*
+frontend/blog-react-app/yarn-error.log*
 
-blog-react-app/.eslintcache
+frontend/blog-react-app/.eslintcache

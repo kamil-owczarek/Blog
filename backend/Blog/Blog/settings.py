@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'posts.apps.PostsConfig',
     'corsheaders',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
