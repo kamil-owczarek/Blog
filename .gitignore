@@ -154,3 +154,28 @@ dmypy.json
 
 # VSC
 .vscode
+
+# React app
+# dependencies
+frontend/blog-react-app/node_modules
+frontend/blog-react-app/.pnp
+frontend/blog-react-app/.pnp.js
+
+# testing
+frontend/blog-react-app/coverage
+
+# production
+frontend/blog-react-app/build
+
+# misc
+frontend/blog-react-app/.DS_Store
+frontend/blog-react-app/.env.local
+frontend/blog-react-app/.env.development.local
+frontend/blog-react-app/.env.test.local
+frontend/blog-react-app/.env.production.local
+
+frontend/blog-react-app/npm-debug.log*
+frontend/blog-react-app/yarn-debug.log*
+frontend/blog-react-app/yarn-error.log*
+
+frontend/blog-react-app/.eslintcache
