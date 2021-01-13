@@ -11,7 +11,7 @@ class App extends Component {
         return (
         <div>
             <nav className="navbar navbar-expand navbar-dark bg-dark">
-            <a href="/" className="navbar-brand">
+            <a className="navbar-brand">
                 Blog
             </a>
             <div className="navbar-nav mr-auto">
@@ -21,7 +21,7 @@ class App extends Component {
                 </Link>
                 </li>
                 <li className="nav-item">
-                <Link to={"/add"} className="nav-link">
+                <Link to={"/posts/add"} className="nav-link">
                     Add post
                 </Link>
                 </li>
@@ -35,8 +35,8 @@ class App extends Component {
 
             <div className="container mt-3">
             <Switch>
-                <Route exact path="/posts" component={PostsList} />
-                <Route exact path="/add" component={AddPost} />
+                <Route exact path={["/", "/posts"]} component={PostsList} />
+                <Route exact path="/posts/add" component={AddPost} />
                 <Route exact path="/posts/:id" component={Post} />
                 <Route exact path="/contact" component={ContactForm} />
             </Switch>
