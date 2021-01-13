@@ -37,8 +37,7 @@ pip install -r requirements.txt
 python manage.py runserver 8080
 ```
 ### URLs
-To access data from application use below URLs:
-Base URL: `https://localhost:8080/api/`
+To access data from application use below URLs: `https://localhost:8080/api/`
 |Endpoint|HTTP Method|CRUD Method|Result|
 |---|---|---|---|
 |`posts`|GET|READ|Get all posts|
@@ -74,8 +73,7 @@ cd blog-react-app/src
 node server.js
 ```
 ### URLs
-To access data from application use below URLs:
-Base URL: `https://localhost:8081/`
+To access data from application use below URLs: `https://localhost:8081/`
 |Endpoint|HTTP Method|CRUD Method|Result|
 |---|---|---|---|
 |`/ or posts`|GET|READ|Get all posts|
