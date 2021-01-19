@@ -49,7 +49,11 @@ Base URL: `https://localhost:8080/api/`
 |`posts/:id`|DELETE|DELETE|Delete a single post|
 |`posts`|DELETE|DELETE|Delete all posts|
 ### API tests
-Tests are written in the Postman. To import `BlogTests.postman_collection.json` file to the Postman check [official documentation](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/).
+To run Django Rest Framework tests type:
+```
+python manage.py test
+```
+Also, tests are written in the Postman. To import `BlogTests.postman_collection.json` file to the Postman check [official documentation](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/).
 
 ## React 
 ### Requirements
