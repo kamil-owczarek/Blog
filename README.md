@@ -23,7 +23,14 @@ Project is created with:
 ## MongoDB 
 To install and configure MongoDB locally, use [official documentation](https://docs.mongodb.com/manual/installation/).
 You can change configuration of MongoDB connection in Django `settings.py` file and `DATABASE` property.
-
+### Data Model
+The data model in MongoDB is as follows:
+|---|---|
+|`id`|Int32|
+|`title`|String|
+|`author`|String|
+|`description`|String|
+|`published`|Date|
 ## Django
 ### Requirements
 - Install Django requirements:
