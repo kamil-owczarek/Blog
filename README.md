@@ -25,6 +25,7 @@ To install and configure MongoDB locally, use [official documentation](https://d
 You can change configuration of MongoDB connection in Django `settings.py` file and `DATABASE` property.
 ### Data Model
 The data model in MongoDB is as follows:
+|Field|Data type|
 |---|---|
 |`id`|Int32|
 |`title`|String|
